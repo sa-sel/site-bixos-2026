@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import 'colors';
-@import '~bootstrap/scss/bootstrap';
+@use 'sass:map';
+@use 'colors';
+@import '/src/bootstrapimports';
 
 $percentages: (
   '5': 5%,
@@ -40,7 +41,7 @@ $percentages: (
   }
 }
 
-@each $breakpoint in map-keys($grid-breakpoints) {
+@each $breakpoint in map.keys($grid-breakpoints) {
   @each $size, $percentage in $percentages {
     @include media-breakpoint-up($breakpoint) {
       .w-#{$breakpoint}-#{$size} {
@@ -53,25 +54,31 @@ $percentages: (
 html,
 body,
 :root {
-  background-color: $white;
-  font-family: 'Ubuntu', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen';
+  background-color: colors.$white;
+  font-family:
+    'Ubuntu',
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen';
   height: 100vh;
 }
 
 a,
 a:link,
 a:visited {
-  color: $blue;
+  color: colors.$blue;
 }
 
 a:hover {
-  color: $cyan !important;
+  color: colors.$cyan !important;
   transition: 0.25s;
 }
 
 a:active {
-  color: $dark-blue !important;
+  color: colors.$dark-blue !important;
 }
 
 a[id] {
@@ -90,7 +97,7 @@ img {
   margin: auto 1.5% auto 1.5%;
   width: 1px;
   height: 100%;
-  border-left: 1px solid $gray-500;
+  border-left: 1px solid colors.$gray-500;
 }
 
 .text-justify {
@@ -109,6 +116,6 @@ details {
   summary + * {
     @extend .mt-2;
     @extend .pt-2;
-    border-top: solid 1px $gray-500;
+    border-top: solid 1px colors.$gray-500;
   }
 }
