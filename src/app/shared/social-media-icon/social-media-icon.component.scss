@@ -1,4 +1,4 @@
-@import 'src/colors';
+@use '/src/colors' as colors;
 
 .social-network-icon a,
 .social-network-icon a:link,
@@ -7,5 +7,5 @@
 }
 
 .social-network-icon button:active {
-  color: $secondary !important;
+  color: colors.$secondary !important;
 }

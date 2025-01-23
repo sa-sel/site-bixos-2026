@@ -1,7 +1,7 @@
-@import 'src/colors';
+@use '/src/colors';
 
 footer section:last-of-type {
-  border-top: solid 1px $gray-700;
+  border-top: solid 1px colors.$gray-700;
 }
 
 div.links * {
@@ -11,5 +11,5 @@ div.links * {
 footer section:last-of-type a,
 footer section:last-of-type a:link,
 footer section:last-of-type a:visited {
-  color: $primary !important;
+  color: colors.$primary !important;
 }
