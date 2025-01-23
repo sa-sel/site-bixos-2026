@@ -57,7 +57,7 @@ Aside from that, start all your commit messages with `#<ISSUE/TASK_NUMBER> - `. 
 8.  Make a PR
     - Follow the instructions in the PR template
     - Move the task to the 'In PR' column in the board
-9.  Request @lucasvianav's review
+9.  Request @FernandoCZanchetta's review
 10. Merge your PR only when:
 
     - It was approved (in code review)
