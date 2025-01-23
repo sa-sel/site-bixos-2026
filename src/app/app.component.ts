@@ -10,7 +10,10 @@ import { Subscription } from 'rxjs'
 export class AppComponent implements OnInit, OnDestroy {
   subscription!: Subscription
 
-  constructor(private router: Router, private titleService: Title) {}
+  constructor(
+    private router: Router,
+    private titleService: Title
+  ) {}
 
   ngOnInit(): void {
     this.subscription = this.router.events.subscribe(route => {
