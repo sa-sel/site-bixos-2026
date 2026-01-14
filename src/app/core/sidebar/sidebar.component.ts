@@ -93,16 +93,20 @@ export class SidebarComponent implements OnInit, OnDestroy {
       collapsed: true,
       subitems: [
         {
+          title: 'Pré-Matrícula Virtual',
+          id: 'pre-matricula',
+        },
+        {
+          title: 'Efetivação de Matrícula',
+          id: 'confirmacao-matricula',
+        },
+        {
           title: 'Cronograma - FUVEST',
           id: 'calendario',
         },
         {
           title: 'Datas das chamadas - FUVEST',
           id: 'datas',
-        },
-        {
-          title: 'Confirmação de matrícula - FUVEST',
-          id: 'confirmacao-matricula',
         },
         {
           title: 'Cronograma - ENEM-USP',
@@ -113,20 +117,12 @@ export class SidebarComponent implements OnInit, OnDestroy {
           id: 'datas-enem-usp',
         },
         {
-          title: 'Confirmação de matrícula - ENEM-USP',
-          id: 'confirmacao-matricula-enem-usp',
-        },
-        {
           title: 'Cronograma - Provão Paulista',
           id: 'calendario-provão-paulista',
         },
         {
           title: 'Datas das chamadas - Provão Paulista',
           id: 'datas-provão-paulista',
-        },
-        {
-          title: 'Confirmação de matrícula - Provão Paulista',
-          id: 'confirmacao-matricula-provao-paulista',
         },
       ],
     },
