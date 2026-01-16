@@ -8,9 +8,21 @@ import { SocialMedia, SocialMediaModel } from '@models'
 })
 export class FooterComponent {
   socialMedia: SocialMediaModel[] = [
-    { name: SocialMedia.Facebook, url: 'https://www.facebook.com/sasel.usp', available: true },
-    { name: SocialMedia.Instagram, url: 'https://www.instagram.com/sasel.usp/', available: true },
-    { name: SocialMedia.TikTok, url: 'https://www.tiktok.com/@sasel.usp/', available: true },
+    {
+      name: SocialMedia.Facebook,
+      url: 'https://www.facebook.com/sasel.usp',
+      available: true,
+    },
+    {
+      name: SocialMedia.Instagram,
+      url: 'https://www.instagram.com/sasel.usp/',
+      available: true,
+    },
+    {
+      name: SocialMedia.TikTok,
+      url: 'https://www.tiktok.com/@sasel.usp/',
+      available: true,
+    },
     { name: SocialMedia.WhatsApp, url: '+55 (16) 99619-0880', available: true },
     {
       name: SocialMedia.LinkedIn,
